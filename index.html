@@ -1,426 +1,404 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, maximum-scale=1">
-  <title>Bahadır Burak YALDIZ</title>
-  <meta name="description" content="Bahadır Burak YALDIZ Web geliştirici - Web Tasarımı ve Kodlama">
-  <meta name="keywords" content="bahadır burak yaldız, bagaturbey, denizli web tasarımı, denizli internet sitesi tasarımı, denizli internet sitesi, türkiye web tasarım, bahadır burak yaldız web tasarımı,">
-  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-  <link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
-  <link href="css/animate.css" rel="stylesheet" type="text/css">
-  <meta>
+    <meta charset="utf-8">
+    <title>Bahadır Burak Yaldız</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner"
+            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
 
-  <!--Başlık_bölümü-->
-  <header id="header_wrapper">
-    <div class="container">
-      <div class="header_box">
-        <div class="logo"><a href="#"><img src="img/logo.png" alt="logo" style="width: 130px;"></a></div>
-        <nav class="navbar navbar-inverse" role="navigation">
-          <div class="navbar-header">
-            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
-              <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
-                class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          </div>
-          <div id="main-nav" class="collapse navbar-collapse navStyle">
-            <ul class="nav navbar-nav" id="mainNav">
-              <li class="active"><a href="#hero_section" class="scroll-link">Ana Sayfa</a></li>
-              <li><a href="#aboutUs" class="scroll-link">Hakkımda</a></li>
-              <li><a href="#service" class="scroll-link">Hizmetler</a></li>
-              <li><a href="#Portfolio" class="scroll-link">Sertifikalar</a></li>
-              <li><a href="#clients" class="scroll-link">Yetkinlik</a></li>
-              <li><a href="#contact" class="scroll-link">İletişim</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="index.html" class="navbar-brand p-0">
+                    <h1 class="m-0">BagaturBey</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav mx-auto py-0">
+                        <a href="about.html" class="nav-item nav-link">Hakkımda</a>
+                        <a href="service.html" class="nav-item nav-link">Hizmetler</a>
+                        <a href="project.html" class="nav-item nav-link">Referanslar</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Sayfalar</a>
+                            <div class="dropdown-menu m-0">
+                                <a href="certificates.html" class="dropdown-item">Sertifikalar</a>
+                                <a href="competence.html" class="dropdown-item">Yetkinlik</a>
+                                <a href="404.html" class="dropdown-item">404 Page</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">İletişim</a>
+                    </div>
+                    <a href="index.html" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Ana Sayfa</a>
+                </div>
+            </nav>
+
+            <div class="container-xxl bg-primary hero-header">
+                <div class="container px-lg-5">
+                    <div class="row g-5 align-items-end">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="text-white mb-4 animated slideInDown">Web Tasarımında Tutku ve Teknolojinin
+                                Buluştuğu Nokta: Benim Hikayem</h1>
+                            <p class="text-white pb-3 animated slideInDown">Merhaba! Ben Bahadır, web sitesi tasarımcısı
+                                ve dijital dünyanın tutkulu keşifçisiyim.</p>
+                            <a href="about.html"
+                                class="btn btn-secondary py-sm-3 px-sm-5 rounded-pill me-3 animated slideInLeft">Devamını
+                                Oku</a>
+                            <a href="contact.html"
+                                class="btn btn-light py-sm-3 px-sm-5 rounded-pill animated slideInRight">İletişim</a>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <img class="img-fluid animated zoomIn" src="img/hero.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Feature Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-4">
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
+                            <h5 class="mb-3">Dijital Pazarlama</h5>
+                            <p class="m-0">Dijital pazarlama, internet ve dijital kanallar aracılığıyla ürün ve
+                                hizmetlerin tanıtımını yaparak hedef kitleleri çevrimiçi ortamda etkilemeyi amaçlayan
+                                stratejik bir pazarlama yaklaşımıdır. Bu yöntem, web sitesi optimizasyonu, sosyal medya,
+                                e-posta pazarlama ve dijital reklamcılığı içerir.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-search text-primary mb-4"></i>
+                            <h5 class="mb-3">SEO ve Geri Bağlantılar</h5>
+                            <p class="m-0">SEO (Arama Motoru Optimizasyonu), bir web sitesinin arama motorlarında daha
+                                görünür hale getirilmesini sağlayan stratejileri içerir ve bu süreçte kaliteli geri
+                                bağlantılar, yani diğer sitelerden gelen referans linkleri, web sitesinin otoritesini
+                                artırarak daha yüksek sıralamalar elde etmesine yardımcı olur.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="feature-item bg-light rounded text-center p-4">
+                            <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
+                            <h5 class="mb-3">Tasarım ve Geliştirme</h5>
+                            <p class="m-0">Web tasarımı, estetik ve kullanıcı deneyimi odaklı bir şekilde web
+                                sitelerinin görsel ve işlevsel yönlerini oluşturmayı içerirken, web geliştirme, bu
+                                tasarımı gerçeğe dönüştürmek ve sitenin arkasındaki işleyişi sağlamak için kodlama ve
+                                programlama süreçlerini kapsar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Feature End -->
+
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="section-title text-secondary">GENEL ÇALIŞMA PRENSİBİM<span></span></p>
+                        <h1 class="mb-5">Hizmet verilecek alana, sektöre ve/veya müşteriye özel </h1>
+                        <p class="mb-4">Dijital pazarlama, SEO ve geri bağlantılar, tasarım ve geliştirme web sitesi
+                            oluşturma süreçlerinde önemli roller oynar, ancak her aşamanın ağırlığı ve önceliği proje ve
+                            hedeflere göre değişebilir. Genel olarak, önem sırasına göre yüzdelerle analizlemek zor olsa
+                            da, yaklaşık olarak yüzdelik analiz şu şekilde olabilir.</p>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-2">Dijital Pazarlama</p>
+                                <p class="mb-2">%25</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-2">SEO ve Geri Bağlantılar</p>
+                                <p class="mb-2">%35</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="35"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="skill mb-4">
+                            <div class="d-flex justify-content-between">
+                                <p class="mb-2">Tasarım ve Geliştirme</p>
+                                <p class="mb-2">%40</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="40"
+                                    aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <p class="mb-4">Bu yüzdeler genel bir yaklaşımdır ve projenin özelliğine, hedef kitlenin türüne
+                            ve pazarlama stratejilerine göre değişebilir. Projenizin özel gereksinimlerini ve
+                            hedeflerini dikkate alarak bu yüzdeleri özelleştirmeniz önemlidir.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Service Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center"><span></span>HİZMETLER<span></span>
+                    </p>
+                    <h1 class="text-center mb-5">Mevcut Hizmetler</h1>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-search fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">SEO Optimizasyonu</h5>
+                            <p class="m-0">SEO optimizasyonu, web sitelerinin arama motorlarında daha üst sıralarda
+                                görünmesini sağlayan stratejilerin uygulanmasıdır. Bu, kaliteli içerik oluşturmayı,
+                                teknik iyileştirmeler yapmayı ve uygun anahtar kelimeleri hedeflemeyi içerir.</p>
+                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fa fa-laptop-code fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Web Tasarımı ve Kodlama</h5>
+                            <p class="m-0">Web tasarımı, kullanıcı dostu ve estetik olarak çekici web siteleri
+                                oluşturmak için görsel ve işlevsel tasarımın planlanmasıdır. Web kodlaması ise bu
+                                tasarımı gerçeğe dönüştürmek için HTML, CSS, JavaScript gibi dilleri kullanarak web
+                                sitesinin altyapısını oluşturmaktır.</p>
+                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item d-flex flex-column text-center rounded">
+                            <div class="service-icon flex-shrink-0">
+                                <i class="fab fa-android fa-2x"></i>
+                            </div>
+                            <h5 class="mb-3">Mobil Uygulama Tasarımı ve Kodlama</h5>
+                            <p class="m-0">Mobil uygulama tasarımı, kullanıcı dostu ve çekici arayüzler oluşturarak
+                                kullanıcıların mobil uygulamayı etkili bir şekilde kullanmalarını sağlar. Kodlama ise bu
+                                tasarımın gerçekleştirilmesini.</p>
+                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Projects Start -->
+        <div class="container-xxl py-5">
+            <div class="container py-5 px-lg-5">
+                <div class="wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="section-title text-secondary justify-content-center"><span></span>Referanslar<span></span>
+                    </p>
+                    <h1 class="text-center mb-5">Son Projeler</h1>
+                </div>
+                <div class="row g-4 portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/portfolio-1.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-1.jpg"
+                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="https://www.vipgamecafe.com"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">Vip Game Cafe</p>
+                                <h5 class="lh-base mb-0">Denizlide yüksek ve kaliteli hizmeti olan bir internet
+                                    kafe.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/portfolio-2.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-2.jpg"
+                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="https://www.hedefsporkulubu20.com"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">Denizli Hedef Spor Kulübü</p>
+                                <h5 class="lh-base mb-0">Denizli içi bir çok spor dalında eğitim ve hizmet veren bir
+                                    spor kulübü.</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="rounded overflow-hidden">
+                            <div class="position-relative overflow-hidden">
+                                <img class="img-fluid w-100" src="img/portfolio-3.jpg" alt="">
+                                <div class="portfolio-overlay">
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/portfolio-3.jpg"
+                                        data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="https://www.alfredsesliasistan.github.io"><i
+                                            class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="bg-light p-4">
+                                <p class="text-primary fw-medium mb-2">Sesli Asistan Alfred</p>
+                                <h5 class="lh-base mb-0">Bilgisayar ve mobil cihazlarda kullanıcılara hizmet vermek için
+                                    tasarlanan sesli asistan</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5 px-lg-5">
+                <div class="row g-5">
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">İLETİŞİM<span></span></p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>PAMUKKALE / DENİZLİ </p>
+                        <p><i class="fa fa-phone-alt me-3"></i>+90 507 025 28 43</p>
+                        <p><i class="fa fa-envelope me-3"></i>bahadir_by@hotmail.com</p>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-outline-light btn-social" href="https://www.instagram.com/bagaturby"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://github.com/bagaturbey"><i
+                                    class="fab fa-github"></i></a>
+                            <a class="btn btn-outline-light btn-social"
+                                href="https://steamcommunity.com/id/bagaturbey"><i class="fab fa-steam"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">SAYFALAR<span></span></p>
+                        <a class="btn btn-link" href="about.html">Hakkımda</a>
+                        <a class="btn btn-link" href="service.html">Hizmetler</a>
+                        <a class="btn btn-link" href="project.html">Referanslar</a>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">SİTE RENK PALETİ<span></span></p>
+                        <div class="row g-2">
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/renk5.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/renk1.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/ren2.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/renk3.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/renk4.jpg" alt="Image">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid" src="img/renk6.jpg" alt="Image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <p class="section-title text-white h5 mb-4">YETKİNLİK<span></span></p>
+                        <p>Web tasarımı ve kodlama konularında yeterlilik, kullanıcı dostu ve etkileyici web siteleri
+                            oluşturmak için kritik bir yetenektir, benimle iletişime geçerek dijital deneyiminizi
+                            mükemmel hale getirebilirsiniz.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-lg-5">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                            &copy; Tüm Hakları Saklıdır.
+
+                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                            Tasarım <a class="border-bottom" href="https://www.bagaturbey.com">BagaturBey</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-secondary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
     </div>
-  </header>
-  <!--Başlık_bölümü-->
 
-  <!--Kahraman_Bölümü-->
-  <section id="hero_section" class="top_cont_outer">
-  </section>
-  <!--Kahraman_Bölümü-->
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-  <section id="aboutUs"><!--Hakkımda-->
-    <div class="inner_wrapper aboutUs-container fadeInLeft animated wow">
-      <div class="container">
-        <h2>Hakkımda</h2>
-        <div class="inner_section">
-
-          <div class="row">
-            <div class="col-lg-12 about-us">
-              <div class="row">
-                <div class="col-md-6">
-                  <h3>Web Tasarımında Tutku ve Teknolojinin Buluştuğu Nokta: Benim Hikayem</h3>
-                  <p>
-                    Merhaba! Ben Bahadır, web sitesi tasarımcısı ve dijital dünyanın tutkulu
-                    keşifçisiyim.
-                    Bilgisayar oyunlarına olan büyük ilgim, yaratıcı tasarımlarımın ve kullanıcı deneyimlerimin temelini
-                    oluşturan önemli bir unsur.
-                    Küçükken ilk defa elime aldığım o oyun kolu, beni sanal dünyanın sınırsız potansiyeline
-                    götürdü.
-                    Oyunlar, benim için sadece eğlence aracı değil, aynı zamanda sanat, hikaye anlatımı ve karmaşık
-                    stratejilerin birleştiği bir ütopyadır.
-                    Bu tutkulu düşkünlüğüm, tasarım anlayışımı besleyerek,
-                    kullanıcıların web sitelerimde gezinirken kendilerini gerçek bir maceranın içindeymiş gibi
-                    hissetmelerini sağlamak için harika bir fırsat sunuyor.
-                    Tasarım projelerime yaklaşırken, her detayı özenle düşünerek, estetik ve işlevselliği mükemmel bir
-                    dengeyle bir araya getirmeye özen gösteriyorum.
-                    Projelerimde, her bir tasarım unsurunun bir karakter veya oyun dünyası gibi özel bir hikayesi
-                    olduğuna inanıyorum. <br />
-                    Benim için en heyecan verici anlardan biri, bir projenin hayata geçtiği ve kullanıcıların web sitemi
-                    keşfettiği andır. Kullanıcılara hızlı ve sorunsuz bir deneyim sunan tasarımlar oluşturmak benim
-                    amacım.
-                    Eğer siz de dijital varlığınızı özgün bir şekilde ifade etmek veya kullanıcıları etkileyici
-                    deneyimlerle buluşturmak isterseniz, benimle iletişime geçmekten çekinmeyin. Bilgisayar
-                    oyunlarındaki tutkum ve tasarım vizyonumla birlikte, sizin için özel projeleri hayata geçirmek için
-                    sabırsızlanıyorum.
-                    Yeni oyunlara ve tasarım trendlerine adım attığım gibi, sizinle de işbirliği yapmak için adım
-                    atmaktan mutluluk duyarım.
-                  </p>
-
-                  <ul class="about-us-list">
-                    <li class="points">Bahadır Burak YALDIZ</li>
-                  </ul><!-- /.Hakkımızda listesi -->
-
-                </div><!-- /.col-md-6 -->
-                <div class="col-md-6"></div><!-- /.col-md-6 -->
-              </div><!-- /.row -->
-            </div><!-- /.col-lg-12 -->
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Hakkımda-->
-
-  <!--Hizmet-->
-  <section id="service">
-    <div class="container">
-      <h2>HİZMETLER</h2>
-      <div class="service_wrapper">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="service_block">
-              <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-android"></i></span>
-              </div>
-              <h3 class="animated fadeInUp wow">Android</h3>
-              <p class="animated fadeInDown wow">Android platformlara uyumlu ve internet dostu sade akıcı siteler.</p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="service_block">
-              <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-apple"></i></span>
-              </div>
-              <h3 class="animated fadeInUp wow">Apple IOS</h3>
-              <p class="animated fadeInDown wow">Apple ve IOS platformlara uyumlu ve internet dostu sade akıcı siteler.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="service_block">
-              <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-html5"></i></span>
-              </div>
-              <h3 class="animated fadeInUp wow">Tasarım</h3>
-              <p class="animated fadeInDown wow">Şık, kullanıcı dostu, hızlı ve güvenilir tasarımlar. </p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 mrgTop">
-            <div class="service_block">
-              <div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa fa-dropbox"></i></span>
-              </div>
-              <h3 class="animated fadeInUp wow">Konsept</h3>
-              <p class="animated fadeInDown wow">Belirlenen konseptlerde ve müşterilerin istekleri doğrultusunda. </p>
-            </div>
-          </div>
-          <div class="col-lg-4 mrgTop">
-            <div class="service_block">
-              <div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa fa-slack"></i></span>
-              </div>
-              <h3 class="animated fadeInUp wow">Kullanıcı Araştırması</h3>
-              <p class="animated fadeInDown wow">Tasarım sürecinde kullanıcıların ihtiyaçlarını anlamak ve onların
-                deneyimlerini şekillendirmek için ışık tutan paha biçilmez bir pusula kullanıyorum. </p>
-            </div>
-          </div>
-          <div class="col-lg-4 mrgTop">
-            <div class="service_block">
-              <div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa fa-users"></i></span>
-              </div>
-              <h3 class="animated fadeInUp wow">Kullanıcı Deneyimi</h3>
-              <p class="animated fadeInDown wow">Deneyimler dijital dünyada iz bırakan sihirli bir dokunuşun, teknoloji
-                ve insan duygularının kusursuz bir dansının sonucudur. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Hizmet-->
-
-
-
-
-  <!-- Sertifikalar -->
-  <section id="Portfolio" class="content">
-
-    <!-- Container -->
-    <div class="container portfolio_title">
-
-      <!-- Title -->
-      <div class="section-title">
-        <h2>Sertifikalar</h2>
-      </div>
-      <!--/Title -->
-
-    </div>
-    <!-- Container -->
-
-    <div class="portfolio-top"></div>
-
-    <!-- Sertifikalar Filtreleri -->
-    <div class="portfolio">
-
-      <div id="filters" class="sixteen columns">
-        <ul class="clearfix">
-          <li><a id="all" href="#" data-filter="*" class="active">
-              <h5>Tümü</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".html">
-              <h5>HTML</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".css">
-              <h5>CSS</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".js">
-              <h5>JAVASCRİPT</h5>
-            </a></li>
-          <li><a class="" href="#" data-filter=".diger">
-              <h5>DİĞER</h5>
-            </a></li>
-        </ul>
-      </div>
-      <!--/Sertifikalar Filtreleri -->
-
-      <!-- Sertifikalar Sarıcı -->
-      <div class="isotope fadeInLeft animated wow" style="position: relative; overflow: hidden; height: 480px;"
-        id="portfolio_wrapper">
-
-        <!-- Sertifikalar Öğesi  -->
-        <div
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four  diger isotope-item">
-          <div class="portfolio_img"> <img src="img/1.gif" alt="Portfolio 1"> </div>
-          <div class="item_overlay">
-            <a href="img/1.gif" class="item_info fancybox">
-              <h4 class="project_name">GİF</h4>
-            </a>
-          </div>
-        </div>
-        <!--/Sertifikalar Öğesi -->
-
-        <!-- Sertifikalar Öğesi -->
-        <div
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   js isotope-item">
-          <div class="portfolio_img"> <img src="img/bilgeis_js.jpg" alt="Portfolio 1"> </div>
-          <div class="item_overlay">
-            <a href="img/bilgeis_js.jpg" class="item_info fancybox">
-              <h4 class="project_name">Bilgeiş Javascript</h4>
-            </a>
-          </div>
-        </div>
-        <!--/Sertifikalar Öğesi -->
-
-        <!-- Sertifikalar Öğesi-->
-        <div
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four  js isotope-item">
-          <div class="portfolio_img"> <img src="img/btk_js.jpg" alt="Portfolio 1"> </div>
-          <div class="item_overlay">
-            <a href="img/btk_js.jpg" class="item_info fancybox">
-              <h4 class="project_name">BTK Javascript</h4>
-            </a>
-          </div>
-        </div>
-        <!--/Sertifikalar Öğesi -->
-
-        <!-- Sertifikalar Öğesi -->
-        <div
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four  html  isotope-item">
-          <div class="portfolio_img"> <img src="img/bilgeis_html.jpg" alt="Portfolio 1"> </div>
-          <div class="item_overlay">
-            <a href="img/bilgeis_html.jpg" class="item_info fancybox">
-              <h4 class="project_name">Bilgeiş HTML</h4>
-            </a>
-          </div>
-        </div>
-        <!--/Sertifikalar Öğesi-->
-
-        <!--Sertifikalar Öğesi-->
-        <div
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   html web isotope-item">
-          <div class="portfolio_img"> <img src="img/btk_html.jpg" alt="Portfolio 1"> </div>
-          <div class="item_overlay">
-            <a href="img/btk_html.jpg" class="item_info fancybox">
-              <h4 class="project_name">BTK HTML</h4>
-            </a>
-          </div>
-        </div>
-        <!-- Sertifikalar Öğesi -->
-
-        <!-- Sertifikalar Öğesi -->
-        <div
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four  css isotope-item">
-          <div class="portfolio_img"> <img src="img/bilgeis_css.jpg" alt="Portfolio 1"> </div>
-          <div class="item_overlay">
-            <a href="img/bilgeis_css.jpg" class="item_info fancybox">
-              <h4 class="project_name">Bilgeiş CSS</h4>
-            </a>
-          </div>
-        </div>
-        <!--/Sertifikalar Öğesi -->
-
-        <!-- Sertifikalar Öğesi -->
-        <div
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four  css isotope-item">
-          <div class="portfolio_img"> <img src="img/btk_css.jpg" alt="Portfolio 1"> </div>
-          <div class="item_overlay">
-            <a href="img/btk_css.jpg" class="item_info fancybox">
-              <h4 class="project_name">BTK CSS</h4>
-            </a>
-          </div>
-        </div>
-        <!--/Sertifikalar Öğesi -->
-
-        <!-- Sertifikalar Öğesi -->
-        <div
-          style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;"
-          class="portfolio-item one-four   diger isotope-item">
-          <div class="portfolio_img"> <img src="img/2.gif" alt="Portfolio 1"> </div>
-          <div class="item_overlay">
-            <a href="img/2.gif" class="item_info fancybox">
-              <h4 class="project_name">GİF</h4>
-            </a>
-          </div>
-        </div>
-        <!--/Sertifikalar Öğesi -->
-
-      </div>
-      <!--/Sertifikalar Sarıcı -->
-
-    </div>
-    <!--/Sertifikalar Filtresi -->
-
-    <div class="portfolio_btm"></div>
-
-
-    <div id="project_container">
-      <div class="clear"></div>
-      <div id="project_data"></div>
-    </div>
-
-
-  </section>
-  <!--/Sertifikalar -->
-
-  <section class="page_section" id="clients"><!--sayfa_bölümü-->
-    <h2>YETKİNLİK</h2>
-    <!--sayfa_bölümü-->
-    <div class="client_logos"><!--Diller ve araçlar logoları-->
-      <div class="container">
-        <ul class="fadeInRight animated wow">
-          <li><img src="img/logohtmlcssjs.png" alt=""></li>
-          <li><img src="img/logonodejs.png" alt=""></li>
-          <li><img src="img/logophp.png" alt=""></li>
-          <li><img src="img/logomysql.png" alt=""></li>
-          <li><img src="img/logoboostrap.png" alt=""></li>
-          <li><img src="img/logoreact.png" alt=""></li>
-          <li><img src="img/logovcode.png" alt=""></li>
-          <li><img src="img/logops.png" alt=""></li>
-          <li><img src="img/logopr.png" alt=""></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <!--Diller ve araçlar logoları-->
-
-
-  <!--Alt Çizgi-->
-  <footer class="footer_wrapper" id="contact">
-    <div class="container">
-      <section class="page_section contact" id="contact">
-        <div class="contact_section">
-          <h2>İletişime Geçin</h2>
-          <div class="row">
-            <div class="col-lg-4">
-
-            </div>
-            <div class="col-lg-4">
-
-            </div>
-            <div class="col-lg-4">
-
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4 wow fadeInLeft">
-            <div class="contact_info">
-              <div class="detail">
-                <h4>Adres</h4>
-                <p>TÜRKİYE-DENİZLİ/PAMUKKALE</p>
-              </div>
-              <div class="detail">
-                <h4>Email Adresi</h4>
-                <p>bahadir_by@hotmail.com</p>
-              </div>
-            </div>
-
-            <ul class="social_links">
-              <li class="twitter animated bounceIn wow delay-02s"><a href="https://www.instagram.com/bagaturby/"
-                  target="_blank"><i class="fa fa-instagram"></i></a></li>
-              <li class="facebook animated bounceIn wow delay-03s"><a href="https://github.com/bagaturbey"
-                  target="_blank"><i class="fa fa-github"></i></a></li>
-              <li class="gplus animated bounceIn wow delay-05s"><a href="https://steamcommunity.com/id/bagaturbey"
-                  target="_blank"><i class="fa fa-steam"></i></a></li>
-            </ul>
-          </div>
-          <div class="col-lg-8 wow fadeInLeft delay-06s">
-            <div class="form">
-              <img src="img/Contact.jpg" alt="iletisim" style=" width: 600px; border-radius: 10px;">
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  </footer>
-
-  <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
-  <script type="text/javascript" src="js/jquery.nav.js"></script>
-  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-  <script type="text/javascript" src="js/jquery.isotope.js"></script>
-  <script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
-  <script type="text/javascript" src="js/wow.js"></script>
-  <script type="text/javascript" src="js/custom.js"></script>
-
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
